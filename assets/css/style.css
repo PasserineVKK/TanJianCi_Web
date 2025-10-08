@@ -70,7 +70,7 @@
 #nav .subnav:hover a{
     color:black;
     height:46px;
-    
+    width:100px;
 }
 
 #nav .subnav a{
@@ -124,7 +124,7 @@
     display:block;
     border: 2px solid #ccc;
     border-radius: 5px;
-    padding: 1% 15%;
+    padding: 1% 10%;
     left:50%;
     background-color: rgba(119, 110, 60, 0.6);
     color:#ffffff;
@@ -144,6 +144,7 @@
    font-weight: bold;
    padding-bottom:5px;
    transform: scaleX(150%);
+   
 }
 
 #slider .text-body{
