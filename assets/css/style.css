@@ -115,7 +115,7 @@
     width:100%;
     
     aspect-ratio: 2.25/1;
-    background: url(../assets/img/thamDuc.jpg) top center /cover no-repeat ;
+    background: url(/TanJianCi_Web/assets/img/thamDuc.jpg) top center / cover no-repeat;
     
 }
 
