@@ -71,6 +71,7 @@
     color:black;
     height:46px;
     width:100px;
+    
 }
 
 #nav .subnav a{
@@ -105,7 +106,17 @@
     
 }
 
+#more:hover .subnav >li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
 
+#more:hover .subnav >li>a{
+    color:black;
+}
 #slider{
     
     
@@ -115,8 +126,12 @@
     width:100%;
     
     aspect-ratio: 2.25/1;
+    /* Đây là một cái link sẽ k hoạt động khi
+    bạn chọn Go Live. Hãy kệ nó vì nó dc thiết kế để 
+    chạy trên GitHub */
     background: url(/TanJianCi_Web/assets/img/thamDuc.jpg) top center / cover no-repeat;
-    
+    /* background: url(/assets/img/thamDuc.jpg) top center / cover no-repeat; */
+    /* KHI NÀO COMMIT THÌ LẤY CÁI CÓ TJC RA */
 }
 
 #slider .text-content{
@@ -154,9 +169,79 @@
 }
 
 #content{
+    background-color: #fff;
+    width:100%;
+    display:box;
+    
+}
+
+#content .content-section1{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:64px 0px;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    /* space between letter */
 
 }
 
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about{
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+}
+
+#content .film-list{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+
+.film-list .film{
+    display:flex;
+    flex-direction: column ;
+    /* column de xep anh o tren p o duoi a */
+    align-items: center;
+    width:27%;
+    padding:30px 0px;
+}
+.film-list .film >img{
+    width:100%;
+    aspect-ratio: 1/1.5;
+    border-radius: 5px;
+    box-shadow: 5px 7px 5px rgba(33, 33, 33, 0.5);
+    margin-bottom: 20px;
+}
+
+.film-list .film>p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+    font-weight: 450;
+}
+
+#content .content-section2{
+    background-color: var(--dark-color);
+    color:var(--light-color);
+    padding:64px 0px;
+    
+}
 #footer{
 
 }
