@@ -248,7 +248,119 @@
     background-color: var(--dark-color);
     color:var(--light-color);
     padding:64px 0px;
+ 
     
+}
+
+#content-section2 .goods-infor{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:var(--dark-color);
+    
+    margin:30px 10%;
+    
+
+}
+
+.goods-infor .sell-status-table{
+
+    height:30%;
+    width:100%;
+    background-color: var(--light-color);
+    margin-bottom:43px;
+   
+    border: 0.5px solid #333;
+    box-shadow: 5px 5px 10px rgba(124, 124, 124, 0.5);
+
+}
+.goods-infor .sell-status-table > .status-line{
+    display:flex;
+    padding:8px;
+    width:100%;
+    flex-wrap: wrap;  
+    border: 0.2px solid;
+    border-color: rgba(124, 124, 124, 0.5);
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+.goods-name{
+    flex:3;
+}
+
+.goods-status-soldout{
+    flex:7;
+}
+
+.goods-status-soldout >p{
+    background-color: pink;
+    width:fit-content;
+}
+
+.goods-infor .goods-img-list{ 
+    display:flex;
+    width:100%;
+}
+
+.goods-img-list .goods-img{
+    flex:1;
+    border: 2px solid #333;
+    margin:0 2px;
+    background-color: #fff;
+    width:100%;
+    
+ 
+}
+
+.goods-img-list img{
+    flex:1;
+    display:block;
+    width:100%;
+    object-fit:cover;
+    aspect-ratio: 1/1.25;
+    margin-bottom:20px;
+    box-shadow: 2px 2px 5px rgba(124, 124, 124, 0.7);
+    
+    
+}
+
+
+.goods-img h3{
+    color:black;
+    margin-left:10px;
+    padding-bottom:10px;
+    
+}
+
+.goods-img> p{
+    color:#666;
+    margin-left:10px;
+    font-size:12px;
+    margin-bottom:10px;
+    
+}
+
+.goods-img > div{
+    color:#111;
+    font-size:12px;
+    margin-left:10px;
+    text-align: justify ;
+    margin-right:5px;
+    padding-bottom:40px;
+    
+}
+
+.goods-img > button{
+    margin-left:10%;
+    margin-bottom: 10%;
+    padding:5px;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color:#fff;
+    font-weight: 500;
 }
 #footer{
 
