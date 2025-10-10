@@ -175,7 +175,7 @@
     
 }
 
-#content .content-section1{
+#content #content-section1{
     width:80%;
     margin-left: auto;
     margin-right: auto;
@@ -236,7 +236,15 @@
     font-weight: 450;
 }
 
-#content .content-section2{
+.film-list .film:nth-child(odd){
+    padding-top:5px;
+}
+
+.film-list .film:nth-child(even){
+    padding-bottom:5px;
+}
+
+#content #content-section2{
     background-color: var(--dark-color);
     color:var(--light-color);
     padding:64px 0px;
