@@ -293,6 +293,13 @@
     flex:7;
 }
 
+.goods-status-exist{
+    display:inline-block;
+    background-color: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 6px;
+}
 .goods-status-soldout >p{
     background-color: pink;
     width:fit-content;
@@ -356,13 +363,157 @@
     margin-bottom: 10%;
     padding:5px;
     background-color: #000;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid #333;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     color:#fff;
     font-weight: 500;
 }
-#footer{
+
+.goods-img >button:hover{
+    background-color: rgba(255, 255, 255, 0.8)  ;
+    color:black;
+    font-weight: 600;
+    padding:5px;
+    
+    border-radius: 3px;
+    transition: ease-in-out 0.3s ;
+}
+
+/*giao dien modal bat len khi an vao mua ve*/
+
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: none;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal.open-modal{
+    display:flex;
+    transition: ease-in-out;
+}
+.modal-container{
+    width:80%;  
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    min-height: 300px;
+    display:flex;
+    flex-direction: column;
+    animation: modalFadeIn ease .4s;
+}
+
+.modal-header{
+    flex:5;
+    background-color:cadetblue;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+   
+}
+
+.modal-close{
+    position: absolute;
+    right:5px;
+    
+    
 
 }
+
+.modal-close>i:hover{
+    color:#ccc;
+
+}
+
+.modal-title{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:35%;
+    
+    font-size:20px;
+    font-weight: 600;
+    
+}
+.modal-body{
+    flex:7;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.modal-label{
+    padding-top:10px;
+    padding-left:5px;
+    flex:1;
+}
+
+.modal-input{
+    flex:2;
+    width:90%;
+    left:5%;
+    transform: translateX(+5%);
+    border-radius: 5px;
+    border-width: 1px;    
+    border-color: #666;
+    border-style: solid;
+    color:#333;
+    padding-left:10px;
+}
+
+input::placeholder{
+   
+    
+    font-weight: lighter;
+}
+
+#buy-goods{
+    
+    margin-top:10px;
+    flex:4;
+    background-color: cadetblue;
+    border: none;
+    width:90%;
+    margin-left:5%;
+    margin-top:3%;
+    border-radius: 10px;
+}
+
+#buy-goods:hover{
+    background-color:darkturquoise;
+    transition: ease-in-out 0.1s;
+}
+.modal-footer{
+    flex:2;
+    border-color: white;
+    margin-left:5%;
+    margin-top:10px;
+    position: relative;
+}
+
+.modal-footer>p{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
 
